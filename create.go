@@ -31,7 +31,7 @@ func createKey(w http.ResponseWriter, r *http.Request) {
 	_, error := url.ParseRequestURI(newUrl.Url)
 	if error != nil {
 		w.WriteHeader(http.StatusBadRequest)
-		fmt.Fprintf(w, `{"Error": "406: Not an Acceptable URL"}`)
+		fmt.Fprintf(w, `{"error": "406: Not an Acceptable URL"}`)
 		return
 	}
 
@@ -39,7 +39,7 @@ func createKey(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&newUrl)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
-		fmt.Println(`{"Error": "400: "Failed to encode json}"`)
+		fmt.Println(`{"error": "400: "Failed to encode json}"`)
 		return
 	}
 
