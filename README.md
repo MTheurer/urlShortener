@@ -8,9 +8,9 @@ This is a REST API that will redirect us from an assigned short ID to a full URL
 
 **Usage**
 
- \* ShortyResty can be given a url in the form of Json, and assign an 8 digit key that can be used as a shortened version of its original value. 
+ * ShortyResty can be given a url in the form of Json, and assign an 8 digit key that can be used as a shortened version of its original value. 
 
- \* Your shortened key can be used through localhost port 8080, through the endpoint /shorten
+ * Your shortened key can be used through localhost port 8080, through the endpoint /shorten
 
 
 
