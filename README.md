@@ -54,10 +54,11 @@ Creating a Key for New URL (Using Postman)
 
 3. Enter your URL in Json format
 
-4. If the URL cannot be decoded, you will recieve an error 400.
+4. If your URL is invalid, you will recieve an error 406.
 
-5. If your POST request is successful, you will receive the new key in Json format, example:
+5. If the URL cannot be decoded, you will recieve an error 400.
+
+6. If your POST request is successful, you will receive the new key in Json format, example:
 
 {"short_url":"http://127.0.0.1:8080/(key)}
 
-6. If your URL already exists within the map with it's cooresponding key, you will recieve an error 409.
