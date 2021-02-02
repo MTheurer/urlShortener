@@ -22,6 +22,6 @@ func urlShortener(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusNotFound)
-	fmt.Fprintf(w, `{"Error": "404: URL Not Found"}`)
+	fmt.Fprintf(w, `{"error": "404: URL Not Found"}`)
 
 }
