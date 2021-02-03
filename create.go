@@ -50,7 +50,7 @@ func createKey(w http.ResponseWriter, r *http.Request) {
 	mutex.Unlock()
 
 	w.WriteHeader(http.StatusCreated)
-	fmt.Fprintf(w, `{"short_url": "http://127.0.0.1:5555/%s"}`, newString)
+	fmt.Fprintf(w, `{"short_url": "http://127.0.0.1:8080/%s"}`, newString)
 	log.Println(urlMap)
 	return
 }
