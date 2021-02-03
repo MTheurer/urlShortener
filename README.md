@@ -10,7 +10,7 @@ This is a REST API that will redirect us from an assigned short ID to a full URL
 
  * ShortyResty can be given a url in the form of Json, and assign an 8 digit key that can be used as a shortened version of its original value. 
 
- * Your shortened key can be used through localhost port 8080, through the endpoint /shorten
+ * Your shortened key can be used through localhost port 8080, through the endpoint /(key)
 
 
 
@@ -40,7 +40,7 @@ Using an Existing Key
 
 1. Go to "http://127.0.0.1:8080"
 
-2. add endpoint /shorten/{key} after confirming port 8080 is active
+2. add endpoint /(key) after confirming port 8080 is active
 
 You should be redirected to your cooresponding URL, or be given a 404 error if the URL does not exist.
 
@@ -48,7 +48,7 @@ You should be redirected to your cooresponding URL, or be given a 404 error if t
 
 Creating a Key for New URL (Using Postman)
 
-1. After opening Postman, go to "http://127.0.0.1:8080/create"
+1. After opening Postman, go to "http://127.0.0.1:8080/shorten"
 
 2. You will be entering your new URL within the "body", through a POST method
 
