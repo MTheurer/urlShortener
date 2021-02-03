@@ -17,8 +17,8 @@ This is a REST API that will redirect us from an assigned short ID to a full URL
 **Endpoints and their Uses**
 
 * The endpoint  will act as a Homepage, producing a small text banner.
-* The endpoint ""/shorten/(key)" acts as a redirection middleman, redirecting you to the value (url) of the key.
-* The endpoint "/create" creates a POST request, randomly selecting 8 digits for the key to your new value (url).
+* The endpoint ""/(key)" acts as a redirection middleman, redirecting you to the value (url) of the key.
+* The endpoint "/shorten" creates a POST request, randomly selecting 8 digits for the key to your new value (url).
 
 
 
