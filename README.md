@@ -17,8 +17,8 @@ This is a REST API that will redirect us from an assigned short ID to a full URL
 **Endpoints and their Uses**
 
 * The endpoint  will act as a Homepage, producing a small text banner.
-* The endpoint ""/(key)" acts as a redirection middleman, redirecting you to the value (url) of the key.
-* The endpoint "/shorten" creates a POST request, randomly selecting 8 digits for the key to your new value (url).
+* The endpoint ```/(key)``` acts as a redirection middleman, redirecting you to the value (url) of the key.
+* The endpoint ```/shorten``` creates a POST request, randomly selecting 8 digits for the key to your new value (url).
 
 
 
@@ -26,9 +26,9 @@ This is a REST API that will redirect us from an assigned short ID to a full URL
 
 To execute the the Url Shortener file:
 
-1. Run "go build -o outputname" in command line to compile the open file
+1. Run ```go build -o outputname``` in command line to compile the open file
 
-2. "./outputname" runs the compiled file
+2. ```./outputname``` runs the compiled file
 
 
 
@@ -38,9 +38,9 @@ Using an Existing Key
 
 
 
-1. Go to "http://127.0.0.1:8080"
+1. Go to ```http://127.0.0.1:8080```
 
-2. add endpoint /(key) after confirming port 8080 is active
+2. add endpoint ```/(key)``` after confirming port 8080 is active
 
 You should be redirected to your cooresponding URL, or be given a 404 error if the URL does not exist.
 
@@ -48,7 +48,7 @@ You should be redirected to your cooresponding URL, or be given a 404 error if t
 
 Creating a Key for New URL (Using Postman)
 
-1. After opening Postman, go to "http://127.0.0.1:8080/shorten"
+1. After opening Postman, go to ```http://127.0.0.1:8080/shorten```
 
 2. You will be entering your new URL within the "body", through a POST method
 
