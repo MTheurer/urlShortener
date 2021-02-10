@@ -27,7 +27,7 @@ func createKey(w http.ResponseWriter, r *http.Request) {
 
 	var newUrl urlFormat
 
-	fmt.Println("decoding newKey")
+	fmt.Println("decoding newUrl")
 	err := json.NewDecoder(r.Body).Decode(&newUrl)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
